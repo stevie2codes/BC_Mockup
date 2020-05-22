@@ -23,7 +23,7 @@ body {
   font-weight: 300;
   max-width: 95vw;
   margin: 0 auto;
-  padding: 15px;
+  padding: 20px;
   font-family: sans-serif;
 }
 .full-text {
@@ -71,9 +71,9 @@ td {
   color: rgb(111, 108, 108);
 }
 
-th {
+.th_winners {
   font-weight: 500;
-  max-width: 150px;
+  max-width: 140px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -86,7 +86,6 @@ th {
   color: var(--blue);
   font-weight: 300;
 }
-
 /* 
 Recent Winners mobile styles */
 
@@ -103,4 +102,31 @@ Recent Winners mobile styles */
   .short-text {
     display: none;
   }
+}
+
+/* Latest Posts styles */
+
+.table_head_Posts {
+  background-color: var(--green);
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 300;
+  max-width: 95vw;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.post {
+  display: inline-block;
+  font-weight: 100;
+  font-size: 2.5vh;
+  color: var(--blue);
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.time {
+  white-space: nowrap;
 }
