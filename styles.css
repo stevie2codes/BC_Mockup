@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: auto;
   box-sizing: border-box;
   /* Color variables */
   --blue: #305071;
@@ -10,22 +12,28 @@ body {
 }
 
 .table {
-  width: 90vw;
+  max-width: 95vw;
   margin: 0 auto;
   border: 2px solid rgba(160, 158, 158, 0.29);
 }
 .table_head {
   background-color: var(--blue);
   color: white;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  width: 90vw;
+  font-size: 1.1rem;
+  font-weight: 300;
+  max-width: 95vw;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
   font-family: sans-serif;
 }
-.pl-5 {
+.full-text {
   font-weight: 300;
+  display: none;
+}
+.full-text,
+.short-text {
+  font-weight: 300;
+  color: rgb(111, 108, 108);
 }
 
 .greenIndicator::before {
@@ -60,12 +68,39 @@ body {
 td {
   font-weight: 300;
   text-align: right;
+  color: rgb(111, 108, 108);
 }
 
-/* mobile styles */
+th {
+  font-weight: 500;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.moreWinnersLink {
+  position: absolute;
+  right: 2.5%;
+  margin-top: 10px;
+  color: var(--blue);
+  font-weight: 300;
+}
+
+/* 
+Recent Winners mobile styles */
 
 @media only screen and (max-width: 600px) {
   .score {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .full-text {
+    display: table-cell;
+  }
+  .short-text {
     display: none;
   }
 }
