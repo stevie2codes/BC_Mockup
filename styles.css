@@ -16,6 +16,10 @@ body {
   margin: 0 auto;
   border: 2px solid rgba(160, 158, 158, 0.29);
 }
+.table td,
+.table th {
+  border-top: none;
+}
 .table_head {
   background-color: var(--blue);
   color: white;
@@ -106,27 +110,29 @@ Recent Winners mobile styles */
 
 /* Latest Posts styles */
 
-.table_head_Posts {
+.table_head_posts {
   background-color: var(--green);
   color: black;
   font-size: 1.1rem;
   font-weight: 300;
   max-width: 95vw;
-  margin: 0 auto;
+  margin: 100px auto 0px auto;
   padding: 20px;
   font-family: sans-serif;
 }
 
 .post {
   display: inline-block;
-  font-weight: 100;
-  font-size: 2.5vh;
+  font-weight: 300;
+  font-size: 0.9rem;
   color: var(--blue);
-  max-width: 80%;
+  width: 55vw;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .time {
   white-space: nowrap;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
