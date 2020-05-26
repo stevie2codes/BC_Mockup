@@ -4,136 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> RotoGrinders: The Daily Fantasy Sports Authority
     </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <div class="winnerTable my-5">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <div class="table_head">Recent Winners</div>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="types">
-                    <th class="pl-5 full-text">Player</th>
-                    <th class="pl-5 short-text col-">PLR</th>
 
-                    <td class="score">Score</td>
-
-                    <td class="full-text">Rank</td>
-                    <td class="short-text ">RK</td>
-                    <td class="full-text">Points</td>
-                    <td class="short-text  ">PTS</td>
-                </tr>
-                <tr>
-                    <th class="greenIndicator th_winners">Jim Vasallies</th>
-                    <td class="score">50</td>
-                    <td>20</td>
-                    <td>3108pts</td>
-                </tr>
-                <tr>
-                    <th class="greenIndicator th_winners">Anna Lee Phillipa</th>
-                    <td class="score">120</td>
-                    <td>34</td>
-                    <td>235pts</td>
-                </tr>
-                <tr>
-                    <th class="greyIndicator th_winners">Carmen Sanfransico</th>
-                    <td class="score">222</td>
-                    <td>340</td>
-                    <td>900pts</td>
-                </tr>
-                <tr>
-                    <th class="yellowIndicator th_winners">Jake Moore</th>
-                    <td class="score">75</td>
-                    <td>5</td>
-                    <td>67pts</td>
-                </tr>
-                <tr>
-                    <th class="greenIndicator th_winners">Bette Cooper Lewis</th>
-                    <td class="score">4</td>
-                    <td>73</td>
-                    <td>641pts</td>
-                </tr>
-                <tr>
-                    <th class="greyIndicator th_winners">Janell Hofkner</th>
-                    <td class="score">14</td>
-                    <td>718</td>
-                    <td>3456pts</td>
-                </tr>
-                <tr>
-                    <th class="greyIndicator th_winners">Lyn Jenkins</th>
-                    <td class="score">190</td>
-                    <td>18</td>
-                    <td>23pts</td>
-                </tr>
-                <tr>
-                    <th class="yellowIndicator th_winners">Ansel Brennan</th>
-                    <td class="score">100</td>
-                    <td>136</td>
-                    <td>1007pts</td>
-                </tr>
-            </tbody>
-        </table>
-        <a href="#" class="moreWinnersLink">See All Winners</a>
-    </div>
-
+    <table class="table">
+        <caption class="winners_caption">Recent Winners</caption>
+        <thead class="thead">
+            <th class="full-text">Player</th>
+            <th class="short-text">PLR</th>
+            <th class="score">Score</th>
+            <th class="full-text">Rank</th>
+            <th class="short-text ">RK</th>
+            <th class="full-text">Points</th>
+            <th class="short-text">PTS</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="greenIndicator winners">Jim Vasallies</td>
+                <td class="score">50</td>
+                <td>20</td>
+                <td>3108pts</td>
+            </tr>
+            <tr>
+                <td class="greenIndicator winners">Anna Lee Phillipa</td>
+                <td class="score">120</td>
+                <td>34</td>
+                <td>235pts</td>
+            </tr>
+            <tr>
+                <td class="greyIndicator winners">Carmen Sanfransico</td>
+                <td class="score">222</td>
+                <td>340</td>
+                <td>900pts</td>
+            </tr>
+            <tr>
+                <td class="yellowIndicator winners">Jake Moore</td>
+                <td class="score">75</td>
+                <td>5</td>
+                <td>67pts</td>
+            </tr>
+            <tr>
+                <td class="greenIndicator winners">Bette Cooper Lewis</td>
+                <td class="score">4</td>
+                <td>73</td>
+                <td>641pts</td>
+            </tr>
+            <tr>
+                <td class="greyIndicator winners">Janell Hofkner</td>
+                <td class="score">14</td>
+                <td>718</td>
+                <td>3456pts</td>
+            </tr>
+            <tr>
+                <td class="greyIndicator winners">Lyn Jenkins</td>
+                <td class="score">190</td>
+                <td>18</td>
+                <td>23pts</td>
+            </tr>
+            <tr>
+                <td class="yellowIndicator winners">Ansel Brennan</td>
+                <td class="score">100</td>
+                <td>136</td>
+                <td>1007pts</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="#" class="moreLink">See All Winners</a>
 
     <!-- Latest Posts Table -->
-    <div class="postsTable my-5">
-        <table class="table table-striped ">
-            <thead>
-                <tr>
-                    <div class="table_head_posts">Latest Posts</div>
-                </tr>
-            </thead>
-            <tbody>
 
-                <tr>
-                    <th class="post" colspan="6">Good news from NewYork</th>
-                    <td class="time" colspan="3">20 minutes ago</td>
-                </tr>
-                <tr>
-                    <th class="post" colspan="6">Where can I find a recipe for apple pie?</th>
-                    <td class="time" colspan="3">40 minutes ago</td>
-                </tr>
-                <tr>
-                    <th class="post" colspan="6">Did anyone watch the game...</th>
-                    <td class="time" colspan="3">1 hour ago</td>
-                </tr>
-                <tr>
-                    <th class="post" colspan="6">If I buy a laptop will I need to also buy a mouse?</th>
-                    <td class="time" colspan="3">4 hours ago</td>
-                </tr>
-                <tr>
-                    <th class="post" colspan="6">25 classic books to read</th>
-                    <td class="time" colspan="3">6:00 am today</td>
-                </tr>
-                <tr>
-                    <th class="post" colspan="6">Found this on the floor today</th>
-                    <td class="time" colspan="3">4:37 am today</td>
-                </tr>
-                <tr>
-                    <th class="post" colspan="6">My cat now has a beard and I can't stop laughing</th>
-                    <td class="time" colspan="3">3:00 am today</td>
-                </tr>
-                <tr>
-                    <th class="post" colspan="6">I just climbed Mt.Everest with my friend Mike</th>
-                    <td class="time" colspan="3">2:37 am today</td>
-                </tr>
-            </tbody>
-        </table>
-        <a href="#" class="moreWinnersLink">See All Posts</a>
-    </div>
-
-</body>
-
-</html>
+    <table class="table">
+        <caption class="posts_caption">Latest Posts</caption>
+        <tbody>
+            <tr>
+                <td class="post">Good news from NewYork</td>
+                <td class="time">20 minutes ago</td>
+            </tr>
+            <tr>
+                <td class="post">Where can I find a recipe for apple pie?</td>
+                <td class="time">40 minutes ago</td>
+            </tr>
+            <tr>
+                <td class="post">Did anyone watch the game...</td>
+                <td class="time">1 hour ago</td>
+            </tr>
+            <tr>
+                <td class="post">If I buy a laptop will I need to also buy a mouse?</td>
+                <td class="time">4 hours ago</td>
+            </tr>
+            <tr>
+                <td class="post">25 classic books to read</td>
+                <td class="time">6:00 am today</td>
+            </tr>
+            <tr>
+                <td class="post">Found this on the floor today</td>
+                <td class="time">4:37 am today</td>
+            </tr>
+            <tr>
+                <td class="post">My cat now has a beard and I can't stop laughing</td>
+                <td class="time">3:00 am today</td>
+            </tr>
+            <tr>
+                <td class="post">I just climbed Mt.Everest with my friend Mike</td>
+                <td class="time">2:37 am today</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="#" class="moreLink">See All Posts</a>
